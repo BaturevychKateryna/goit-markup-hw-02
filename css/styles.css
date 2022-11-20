@@ -12,7 +12,6 @@
 body{
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif; 
-    letter-spacing: 0.03em;
 } 
 /* Загальні налаштування */
 .list {
@@ -24,7 +23,7 @@ body{
 /* Шапка */
 .logo{
     color: var(--additional-text-color);
-    font-family: Releway, sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -69,26 +68,44 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
-.hero .hero-button {
+.hero-button {
     cursor: pointer;
     color: var(--accent-color-white);
     background-color: var(--accent-color-blue);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
 }
+.hero-button:hover, .hero-button:focus {
+    background-color: #188CE8;
+    color : rgba(0, 0, 0, 0.15);
+}
 /* Переваги */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .section-text, .aside-text { 
     color: var(--tittle-text-color);
 }
-.section .section-titlle {
+.section-titlle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
-.section .section-text {
+.section-text {
     font-size: 14px;
     line-height: 1.7;
 }
@@ -99,14 +116,20 @@ body{
     line-height: 1.17;
     text-align: center;
 }
-.aside .aside-titlle {
+.aside-titlle {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
-.aside .aside-text {
+.aside-text {
     font-size: 16px;
     line-height: 1.19;
+}
+.design {
+    background-color: var(--background-color-for-button)
+}
+.design-color {
+    background-color: var(--accent-color-white);
 }
 /* Футер */
 .footer {
@@ -141,6 +164,7 @@ body{
     cursor: pointer;
     color: var(--primary-text-color);
     background-color: var(--background-color-for-button);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -148,7 +172,8 @@ body{
     
 }
 .page .page-button:hover, .page .page-button:focus {
-    color: var(--accent-color-blue);
+    color: var(--accent-color-white);
+    background-color: var(--accent-color-blue);
 }
 .page .current {
     color: var(--accent-color-blue);
@@ -156,7 +181,6 @@ body{
 /* Герой Портфоліо */
 .blok .blok-titlle {
     color: var(--primary-text-color);
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
